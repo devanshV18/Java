@@ -1,0 +1,19 @@
+When we install jdk, we also install jvm for our machine. Jvm's task is to execute the java code for us but it does not accept the human readable code directly which we write on the editor. 
+
+Java is platform independent i.e write once on any platform and run anywhere else on any other platform only requirement is that platform should have JVM installed irrespective of hardware and OS. (JVM's are platform dependent i.e they are build separately for each OS and when we install jdk for our platform the corresponding jvm gets installed too) -> Long story short a java code written on Windows which is executed using windows JVM can be run by apple os JVM as well.
+
+So, JVM runs our code but not directly rather when we give it the byte code (machine language/human unreadable) for our original java code in editor. This conversion is done by java compiler (javac).
+
+Therefore the flow is like => Java code (user code) -> java compiler (converts our code to byte code) -> JVM (jvm executes our byte code)
+
+NOTE -> Out of all the java files in our project, the execution starts with a single file which is passed to the JVM, defined by us, also can be said as a entry point of our project. All other files are dependent files which executes automatically but when we execute our code, we only specify a single entry point file which is passed to the JVM and rest is taken care of by JVM itself. 
+
+This entry point file must have a main funxtion inside it.
+
+NOTE - > whenever we run the commad javac <filename> -> it creates a <filename>.class file which is nothing but the byte code
+
+to compile -> javac <filename>.java
+to run -> java <filename>.java
+
+
+HardWare on top of that we have OS on top of that we have JVM. HW -> OS -> JVM
