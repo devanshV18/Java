@@ -1,0 +1,75 @@
+byte b = 127
+int a 256
+b = a //trying to store byte in int. -> This wont work.
+but a = b // this works.
+
+Why? -> in first case we try storing an integer value a (greater range) in a short type variable b, but as range of int is greater, storing it in a smaller range datatype variable always creates a risk of non accomodation hence lossy storage, so it is not allowed in java implicitly rather it needs an explicit type conversion.
+
+Explicit conversion :- b = (byte) a; // ✅ Now works, but may lose data (256 becomes 0)
+
+Why does a = b; work?
+You’re assigning a byte (smaller range) to an int (larger range).
+
+No data loss risk here.
+
+Java automatically allows it.
+
+✅ This is called widening type conversion (done automatically)
+
+🔁 Final Polished Explanation:
+In Java, when we try to assign a larger data type (int) to a smaller one (byte), it causes a compilation error because of the risk of data loss — this is called narrowing conversion, and Java doesn't allow it without explicit casting.
+
+However, assigning a smaller data type (byte) to a larger one (int) is safe and allowed by default — this is called widening conversion.
+
+
+❓ Is float to int conversion implicit in Java?
+❌ No. It is NOT implicit. You need to do it explicitly.
+
+✅ Why?
+Because float → int means you're moving from:
+
+A floating-point type (float)
+➡ which can store decimal values (like 5.75, 3.14, etc.)
+
+To an integer type (int)
+➡ which stores only whole numbers (like 5, 10, etc.)
+
+There is a clear risk of data loss — the decimal part will be truncated, not rounded.
+
+float pi = 3.14f;
+int x = pi;     // ❌ Compilation error
+or
+int x = 3.14f   // ❌ Compilation error
+
+
+Conversion	    Allowed Implicitly?	             Reason
+int → float	        ✅ Yes	                No risk of data loss
+byte -> int         ✅ Yes                          ""
+int -> byte         ❌ No                       Risk of data loss
+float -> int        ❌ No                              ""
+
+
+
+//A case of explicit type conversion of int to byte
+byte b = (byte) 257;
+
+byte range in Java: -128 to 127 (total 256 values)
+
+You're trying to fit 257 (which is an int) into byte
+
+This causes overflow, and Java wraps the value around
+
+🧠 How does Java handle it?
+Java only keeps the last 8 bits (1 byte) of the number.
+
+So let's convert 257 to binary:
+
+arduino
+Copy
+Edit
+257 in binary = 00000001 00000001   ← (in 16-bit)
+Java takes the last 8 bits: 00000001
+
+That's 1 in decimal
+
+✅ So: b = 1
