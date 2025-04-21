@@ -15,5 +15,10 @@ NOTE - > whenever we run the commad javac <filename> -> it creates a <filename>.
 to compile -> javac <filename>.java
 to run -> java <filename>.java
 
+NOTE -> JRE -> STANDS FOR java runtime environment and it waraps the jvm, so that jvm is a part of JRE.
+JRE is libraries (classes) support + JVM
+
+therefore :- JDK ->(contains) JRE ->(contains) JVM -> This architecture makes java platform independent.
+
 
 HardWare on top of that we have OS on top of that we have JVM. HW -> OS -> JVM

@@ -1,0 +1,3 @@
+Variables are containers of specifivc type that can save data temporarily or in runtime. Until the code runs, variables save data as per code implementation else the data is not persistent when we dont run the code. Variables have a name and a value.
+
+Java is a strongly typed language that means we need to specify the type of data we want to store such as -> int, string , boolean etc.

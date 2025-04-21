@@ -1,0 +1,49 @@
+There are two types:-
+
+primitive -> simple, preexisting data types -> int (-ve, +ve) range, float (decimal), char, boolean etc
+int further can be byte, short, long etc.
+float can further also be double.
+
+//demo
+
+1 byte -> 8 bits
+
+type                range                                              example
+
+byte	        1 byte	-128 to 127 	                            byte age = 25;
+short	        2 bytes	-32,768 to 32,767	                        short salary = 20000;
+int	            4 bytes	-2,147,483,648 to 2,147,483,647	            int population = 1000000;
+long	        8 bytes	Very large range	                        long starsInGalaxy = 9876543210L;
+float	        4 bytes	~6 to 7 decimal digits	                    float pi = 3.14f;
+double	        8 bytes	~15 decimal digits	                        double distance = 3.14159265358979; 
+char            2 bytes follows unicode inplace of ASCII            char ch = 'a'   
+
+For float, you must add f or F at the end (e.g., 3.14f) or you'll get an error.
+
+// Use float if precision is not very important and memory is limited.
+
+// Use double (default) when you need more precision (most calculations use this).
+
+
+//Literals -> A literal is a constant value that you write directly in the code.
+
+int age = 21;           // 21 is an integer literal
+char grade = 'A';       // 'A' is a character literal
+String name = "Devansh"; // "Devansh" is a string literal
+
+
+logarithmic notations :-
+
+ex double num1 = 12e10;
+
+double num = AeB;
+A × 10^B
+
+so, 12e10 = 12 X 10^10
+
+1.2e11 = 1.2 x 10^11
+
+
+
+
+
