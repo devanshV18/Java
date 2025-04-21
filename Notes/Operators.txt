@@ -1,0 +1,407 @@
+**Arithmetic Operators** in Java with full explanations and **2 examples** for each. 🚀
+
+---
+
+## 🔢 What are Arithmetic Operators in Java?
+
+Arithmetic operators are used to **perform mathematical operations** on variables and values.
+
+---
+
+### 📘 List of Java Arithmetic Operators:
+
+| Operator | Name              | Description                                |
+|----------|-------------------|--------------------------------------------|
+| `+`      | Addition          | Adds two values                             |
+| `-`      | Subtraction       | Subtracts the second value from the first   |
+| `*`      | Multiplication    | Multiplies two values                       |
+| `/`      | Division          | Divides first value by second               |
+| `%`      | Modulus (Remainder)| Returns remainder of division               |
+
+---
+
+## ✅ Now, Examples for Each Operator:
+
+---
+
+### 1️⃣ `+` (Addition)
+#### ✅ Example 1:
+```java
+int a = 5, b = 3;
+System.out.println(a + b); // Output: 8
+```
+
+#### ✅ Example 2:
+```java
+double x = 2.5, y = 3.5;
+System.out.println(x + y); // Output: 6.0
+```
+
+---
+
+### 2️⃣ `-` (Subtraction)
+#### ✅ Example 1:
+```java
+int a = 10, b = 4;
+System.out.println(a - b); // Output: 6
+```
+
+#### ✅ Example 2:
+```java
+float x = 5.5f, y = 2.0f;
+System.out.println(x - y); // Output: 3.5
+```
+
+---
+
+### 3️⃣ `*` (Multiplication)
+#### ✅ Example 1:
+```java
+int a = 7, b = 6;
+System.out.println(a * b); // Output: 42
+```
+
+#### ✅ Example 2:
+```java
+double p = 2.0, q = 1.5;
+System.out.println(p * q); // Output: 3.0
+```
+
+---
+
+### 4️⃣ `/` (Division)
+#### ✅ Example 1 (Integer division):
+```java
+int a = 10, b = 3;
+System.out.println(a / b); // Output: 3 (not 3.33, because it's int division)
+```
+
+#### ✅ Example 2 (Floating point division):
+```java
+double x = 10.0, y = 3.0;
+System.out.println(x / y); // Output: 3.333...
+```
+
+---
+
+### 5️⃣ `%` (Modulus)
+#### ✅ Example 1 (Remainder of integer division):
+```java
+int a = 10, b = 3;
+System.out.println(a % b); // Output: 1
+```
+
+#### ✅ Example 2 (With negative values):
+```java
+int x = -13, y = 5;
+System.out.println(x % y); // Output: -3 (sign of numerator is preserved)
+```
+
+---
+
+### 🧠 Summary:
+
+| Expression | Meaning                  | Result (example)         |
+|------------|--------------------------|---------------------------|
+| `a + b`    | Addition                  | `5 + 3 = 8`               |
+| `a - b`    | Subtraction               | `10 - 4 = 6`              |
+| `a * b`    | Multiplication            | `7 * 6 = 42`              |
+| `a / b`    | Division (int or float)   | `10 / 3 = 3` (int), `3.33` (float) |
+| `a % b`    | Remainder/Modulus         | `10 % 3 = 1`              |
+
+---
++=, *=, -= etc => aata hai
+
+
+
+
+Absolutely Devansh! Let's go step-by-step and thoroughly break down **Relational Operators in Java**, with full examples to cover all cases. This topic is super important for **conditions, comparisons, loops**, and logical decision-making in Java. 🧠✨
+
+---
+
+## 🔗 What are Relational Operators?
+
+Relational operators in Java **compare two values or expressions** and return a **boolean value** (`true` or `false`).
+
+---
+
+## 📘 List of Relational Operators in Java:
+
+| Operator | Name                  | Description                                    |
+|----------|-----------------------|------------------------------------------------|
+| `==`     | Equal to              | Returns `true` if both operands are equal      |
+| `!=`     | Not equal to          | Returns `true` if operands are not equal       |
+| `>`      | Greater than          | Returns `true` if left operand is greater      |
+| `<`      | Less than             | Returns `true` if left operand is smaller      |
+| `>=`     | Greater than or equal to | Returns `true` if left is greater or equal |
+| `<=`     | Less than or equal to | Returns `true` if left is less or equal        |
+
+---
+
+## ✅ Examples for Each Operator:
+
+---
+
+### 1️⃣ `==` (Equal to)
+
+```java
+int a = 10, b = 10;
+System.out.println(a == b); // true
+
+int x = 5, y = 9;
+System.out.println(x == y); // false
+```
+
+---
+
+### 2️⃣ `!=` (Not Equal to)
+
+```java
+int age1 = 18, age2 = 20;
+System.out.println(age1 != age2); // true
+
+char c1 = 'a', c2 = 'a';
+System.out.println(c1 != c2); // false
+```
+
+---
+
+### 3️⃣ `>` (Greater than)
+
+```java
+int num1 = 7, num2 = 3;
+System.out.println(num1 > num2); // true
+
+int a = 4, b = 10;
+System.out.println(a > b); // false
+```
+
+---
+
+### 4️⃣ `<` (Less than)
+
+```java
+int marks = 45;
+System.out.println(marks < 50); // true
+
+double score1 = 8.5, score2 = 5.5;
+System.out.println(score1 < score2); // false
+```
+
+---
+
+### 5️⃣ `>=` (Greater than or Equal to)
+
+```java
+int temp = 30;
+System.out.println(temp >= 30); // true
+
+System.out.println(temp >= 35); // false
+```
+
+---
+
+### 6️⃣ `<=` (Less than or Equal to)
+
+```java
+int speed = 60;
+System.out.println(speed <= 60); // true
+
+System.out.println(speed <= 50); // false
+```
+
+---
+
+## 🧪 Extra: Comparing Different Data Types
+
+Java **allows comparisons** between:
+
+- `int` and `float`
+- `float` and `double`
+- `char` and `int` (since char has numeric Unicode value)
+
+Example:
+
+```java
+int i = 100;
+float f = 100.0f;
+System.out.println(i == f); // true
+
+char ch = 'A'; // Unicode value is 65
+System.out.println(ch == 65); // true
+```
+
+---
+
+## 💡 Use Cases in Real Programming:
+
+1. **Conditions**
+```java
+if (age >= 18) {
+    System.out.println("You can vote.");
+}
+```
+
+2. **Loops**
+```java
+for (int i = 0; i < 5; i++) {
+    System.out.println(i); // prints 0 to 4
+}
+```
+
+---
+
+## 🧠 Summary Table
+
+| Expression       | Meaning                           | Result Example         |
+|------------------|-----------------------------------|------------------------|
+| `a == b`         | Equal to                          | `10 == 10 ➝ true`      |
+| `a != b`         | Not equal to                      | `10 != 5 ➝ true`       |
+| `a > b`          | Greater than                      | `7 > 5 ➝ true`         |
+| `a < b`          | Less than                         | `3 < 10 ➝ true`        |
+| `a >= b`         | Greater than or equal to          | `10 >= 10 ➝ true`      |
+| `a <= b`         | Less than or equal to             | `8 <= 9 ➝ true`        |
+
+---
+
+
+Bilkul bhai Devansh! 😎  
+Chalo ab **Java ke Logical Operators** ko **Hindi mein** poori tarah samajhte hain, examples ke saath — taaki koi confusion na rahe 💡
+
+---
+
+## 🔗 Logical Operators in Java
+
+Logical operators ka use **conditions (if, while, etc.)** mein hota hai, jahan **true ya false** decide karna hota hai. Ye mostly **boolean values** ke saath kaam karte hain.
+
+---
+
+### ✅ Java ke 3 Logical Operators:
+
+| Operator | Naam           | Kaam kya karta hai?                         |
+|----------|----------------|---------------------------------------------|
+| `&&`     | Logical AND     | Dono conditions true ho to hi `true`        |
+| `||`     | Logical OR      | Koi ek bhi condition true ho to `true`      |
+| `!`      | Logical NOT     | Condition ko ulta kar deta hai (`true` ➝ `false`) |
+
+---
+
+## 🔥 1. Logical AND (`&&`)
+
+### 👉 Syntax:
+
+```java
+condition1 && condition2
+```
+
+**Dono true honi chahiye, tabhi result true hoga.**
+
+### ✅ Example:
+
+```java
+int age = 25;
+if (age > 18 && age < 60) {
+    System.out.println("Working Age Group");
+}
+```
+
+🧠 *Explanation:*  
+- age > 18 → `true`  
+- age < 60 → `true`  
+- `true && true` ➝ `true`, toh print karega.
+
+### ❌ Another Example:
+
+```java
+int marks = 45;
+if (marks > 50 && marks < 100) {
+    System.out.println("Pass");
+} else {
+    System.out.println("Fail");
+}
+```
+
+- 45 > 50 → `false`  
+- `false && anything` ➝ `false`
+
+---
+
+## 🔥 2. Logical OR (`||`)
+
+### 👉 Syntax:
+
+```java
+condition1 || condition2
+```
+
+**Koi ek condition bhi true ho toh result true hoga.**
+
+### ✅ Example:
+
+```java
+int temp = 38;
+if (temp > 40 || temp < 0) {
+    System.out.println("Extreme Weather");
+} else {
+    System.out.println("Normal Weather");
+}
+```
+
+- temp > 40 → `false`  
+- temp < 0 → `false`  
+- `false || false` ➝ `false`  
+➡️ Output: *Normal Weather*
+
+### Another Example:
+
+```java
+int a = 5, b = 10;
+if (a < 3 || b == 10) {
+    System.out.println("Condition met");
+}
+```
+
+- `a < 3` ➝ false  
+- `b == 10` ➝ true  
+- `false || true` ➝ true ➝ *Condition met*
+
+---
+
+## 🔥 3. Logical NOT (`!`)
+
+### 👉 Syntax:
+
+```java
+!condition
+```
+
+**Condition ka result ulta kar deta hai.**
+
+### ✅ Example:
+
+```java
+boolean isRaining = false;
+if (!isRaining) {
+    System.out.println("You can go outside.");
+}
+```
+
+- isRaining = false  
+- `!isRaining` ➝ true  
+➡️ Output: *You can go outside.*
+
+---
+
+## ✅ Mini Summary (Mind Map):
+
+| Expression        | Result |
+|-------------------|--------|
+| `true && true`    | true   |
+| `true && false`   | false  |
+| `false && false`  | false  |
+| `true || false`   | true   |
+| `false || false`  | false  |
+| `!true`           | false  |
+| `!false`          | true   |
+
+---
